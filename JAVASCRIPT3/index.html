@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous"> 
+    <!--bootstrap with icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello!</title>
+  </head>
+  <body>
+    <h1>Working with bootstrap forms</h1>
+    <button type ="button" class="btn btn-primary" id="hi">Say HI</button>
+
+    <div class="alert alert-success" role="alert" id="alert-div" style="display: none;">
+        HELLO there!!!
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">USER Registration form  </h2>
+        <form class="row g-3 needa-validation" novalidate> 
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" required>
+                <div class="invalid-feedback" > First Name is required</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" required>
+                <div class="invalid-feedback" > Last Name is required</div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="Email" class="form-label">Email</label>
+                <input type="Email" class="form-control" id="Email" required>
+                <div class="invalid-feedback" > Please enter a valid Email </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback" > password is required</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="Confirm password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm password" required>
+                <div class="invalid-feedback" > please confirm your password</div>
+            </div>
+
+            <div class="col-md-12">
+                <label class="form-label">Gender</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" required>
+                    <label class="form-check-label" for="female" > FEMALE</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" required>
+                    <label class="form-check-label" for="male" > MALE</label>
+                </div>
+
+                <div class="invalid feedback">Please select a gender</div>
+            </div>
+         <div class="col-md-12" >
+        <button class="btn btn-primary" type="Submit"> Register</button>
+    </div>
+</form>    
+</div>
+
+
+
+     <!--for boottrap functioning -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript for Bootstrap Validation --> 
+   <script>
+    (function () { 'use strict'
+     var forms = document.querySelectorAll('.needs-validation') 
+     Array.prototype.slice.call(forms).forEach(function (form)
+      
+      {
+         form.addEventListener('submit', function (event)
+          {
+             if (!form.checkValidity()) { 
+                event.preventDefault()
+                 event.stopPropagation()
+                  }
+                   form.classList.add('was-validated')
+                    }, false)
+                     })
+                      })();
+                       </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>

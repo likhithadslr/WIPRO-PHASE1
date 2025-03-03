@@ -1,0 +1,27 @@
+
+
+#showcase{
+    position : "relative" ;
+}
+
+nav{
+    background-color: rgb(131, 187, 168);
+}
+
+nav ul{
+    margin:0;
+    padding :0;
+}
+
+nav li{
+    display: inline;
+    float: left;
+    
+}
+
+
+nav a{
+    display: inline-block;
+    width: 100px;
+    color: rgb(163, 85, 85);
+}

@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> getElementByClassName example</title>
+   </head>
+<body>
+    <div class="myClass">Item 1</div>
+    <div class="myClass">Item 2</div>
+    <div class="myClass">Item 3</div>
+    <div class="notMyClass">Item 4</div>
+
+    <script>
+        document.write();
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color:green;
+        }
+        body {
+            text-align:center;
+        }
+
+        .example {
+            padding:10px;
+            margin:auto;
+            margin-top:10px;
+            border:1px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4 class="example">
+            div1
+        </h4>
+        <h4 class="yellowBorder example">
+            div2
+        </h4>
+        <h4 class="greenBorder example">
+            div3
+        </h4>
+        <h4 class="example">
+            div4
+        </h4>
+    </div>
+
+    <script>
+        document.getElementsByClassName('greenBorder example')[0]
+                .style.border="10px solid green";
+        document.getElementsByClassName('yellowBorder example')[1]
+            .style.border="10px solid yellow";
+    </script>
+</body>
+</html>
